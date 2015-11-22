@@ -18,10 +18,10 @@ import sys
 
 inputfile = []
 
-w = open('reviews.txt', 'a')
-x = open('pterms.txt', 'a')
-y = open('rterms.txt', 'a')
-z = open('scores.txt', 'a')
+w = open('data/reviews.txt', 'w')
+x = open('data/pterms.txt', 'w')
+y = open('data/rterms.txt', 'w')
+z = open('data/scores.txt', 'w')
 
 '''
 Description of Functions:
