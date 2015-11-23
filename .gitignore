@@ -2,3 +2,5 @@
 .idea
 indexes/*
 data/*
+
+*.pyc
