@@ -15,8 +15,11 @@ open_file function and is simply composed of the separated lines of the input
 file.
 '''
 import sys
+import os
 
 inputfile = []
+if not os.path.exists("data"):
+    os.makedirs("data")
 
 w = open('data/reviews.txt', 'w')
 x = open('data/pterms.txt', 'w')

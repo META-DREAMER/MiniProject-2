@@ -1,4 +1,5 @@
-rm -f indexes/*.idx
+rm -rf indexes
+mkdir indexes
 
 cat data/reviews.txt | perl break.pl | db_load -c duplicates=1 -T -t hash indexes/rw.idx
 sort -u data/pterms.txt  | perl break.pl | db_load -c duplicates=1 -T -t btree indexes/pt.idx
